@@ -3,7 +3,7 @@
 A sleek, **fully interactive** rating component built with **HTML, CSS, and JavaScript**. This project allows users to select a rating and submit their feedback dynamically.  
 
 ## 🛰 Live Demo  
-🔗 [View Project](https://bhavikthakur.github.io/stats-preview-card/)  
+🔗 [View Project](https://bhavikthakur.github.io/interactive-rating-component/)  
 
 ---
 
