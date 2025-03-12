@@ -1,0 +1,191 @@
+:root {
+
+    /* ---PRIMARY COLOR----  */
+    --clr-orange-500: hsl(25, 97%, 53%);
+    /* ----SECONDARY COLORS----  */
+    --clr-white-500: hsl(0, 0%, 100%);
+    --clr-grey-300: hsl(217, 12%, 63%);
+    --clr-blue-700: hsl(214, 18%, 23%);
+    --clr-blue-800: hsl(213, 19%, 18%);
+    --clr-blue-900: hsl(216, 12%, 8%);
+    --clr-red-500: hsl(345, 65%, 65%);
+    /* ---FONT WEIGHT ---  */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+
+body {
+    color: var(--clr-grey-300);
+    background-color: var(--clr-blue-900);
+    font-weight: var(--fw-regular);
+    font-family: "Overpass", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 0.938rem;
+}
+
+/* --------TYPOGRAPHY------------------- */
+
+.card__title {
+    color: var(--clr-white-500);
+    font-size: 1.8rem;
+    margin-top: 1.1em;
+}
+
+.card__submit {
+    color: var(--clr-blue-900);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: var(--clr-orange-500);
+    border: 0;
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+    padding: 1em 0;
+    border-radius: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.card__submit:hover,
+.card__submit:focus {
+    background-color: var(--clr-white-500);
+}
+
+.card__body,
+.card__description {
+    line-height: 1.6;
+}
+
+.card__description {
+    margin-bottom: 1.4em;
+}
+
+.card__error {
+    text-align: center;
+    color: var(--clr-red-500);
+    font-weight: var(--fw-regular);
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+
+/* ----- THANK YOU CARD----------- */
+.card__rating {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: var(--clr-orange-500);
+    background-color: var(--clr-blue-700);
+    border-radius: 1.5em;
+    font-size: 0.9rem;
+}
+
+
+.card__greet {
+    color: var(--clr-white-500);
+    font-size: 1.8rem;
+    margin-top: 1em;
+}
+
+
+
+/* -----------LAYOUT----------------  */
+
+.card {
+    background-color: var(--clr-blue-800);
+    max-width: 415px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    border-radius: 2em;
+    transition: opacity 0.25s ease-out;
+}
+
+.card__head {
+    align-self: flex-start;
+    border-radius: 50%;
+    padding: 1em;
+    background-color: var(--clr-blue-700);
+}
+
+.card__star {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card__ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card__btns {
+
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card__btn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1em;
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-blue-700);
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.card__btn:hover,
+.card__btn:focus {
+    background-color: var(--clr-white-500);
+    color: var(--clr-blue-900);
+
+}
+
+.card__btn:active {
+    background-color: var(--clr-orange-500);
+
+}
+
+/* ------------ THANK YOU CARD --------------- */
+.card--thankyou {
+    background-color: var(--clr-blue-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em;
+    max-width: 415px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 2em;
+    text-align: center;
+    gap: 1rem;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+
+/* ----------- CLASSES TO ADD and REMOVE ----------  */
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.active {
+    background-color: var(--clr-orange-500);
+    color: var(--clr-blue-900);
+}

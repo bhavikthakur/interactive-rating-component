@@ -1,0 +1,23 @@
+@media (max-width:370px) {
+
+    .card {
+        border-radius: 1em;
+    }
+
+    .card__btns {
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+
+    }
+
+    .card__btn {
+        width: 100%;
+        border-radius: 1em;
+    }
+
+    .card__submit {
+        border-radius: 1em;
+    }
+
+}

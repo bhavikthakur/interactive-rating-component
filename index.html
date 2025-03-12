@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main class="card">
+      <picture class="card__head">
+        <img src="images/icon-star.svg" alt="A star icon" class="card__star" />
+      </picture>
+      <h1 class="card__title">How did we do?</h1>
+      <p class="card__description">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form class="card__ratings">
+        <ul class="card__btns">
+          <li class="card__btn card__btn--one">1</li>
+          <li class="card__btn card__btn--two">2</li>
+          <li class="card__btn card__btn--three">3</li>
+          <li class="card__btn card__btn--four">4</li>
+          <li class="card__btn card__btn--five">5</li>
+        </ul>
+        <button class="card__submit" type="button">Submit</button>
+      </form>
+      <p class="card__error hidden">Please select rating to submit</p>
+    </main>
+    <article class="card card--thankyou hidden">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="A mobile device to indicate a message"
+        class="card__img"
+      />
+      <p class="card__rating">You selected 4 out of 5</p>
+      <h2 class="card__greet">Thank you!</h2>
+      <p class="card__body">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </article>
+
+    <script src="app.js"></script>
+  </body>
+</html>

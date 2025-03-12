@@ -1,0 +1,38 @@
+/* --------------CSS RESET------------------------------ */
+
+/* 1. Using easy to style box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Removing default margin */
+* {
+    margin: 0;
+}
+
+
+/* 5. Improving media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
