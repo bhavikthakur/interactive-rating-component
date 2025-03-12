@@ -42,7 +42,7 @@ A sleek, **fully interactive** rating component built with **HTML, CSS, and Java
 ## 🔧 Setup & Usage  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/social-links-profile.git    
+   git clone https://github.com/bhavikthakur/interactive-rating-component.git   
 2. Open index.html in your browser. 
 
 ## 🎥  How it works  
